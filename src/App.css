@@ -8,11 +8,11 @@
 h1{
     font-family: 'Chivo', sans-serif;
 }
-.bg-image{
+.bg-image-icon{
     background-image: url("./assets/bg-github.svg");
     background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-size: cover; 
     background-size: 400px 400px;
 

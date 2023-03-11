@@ -1,11 +1,12 @@
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Divider from "@mui/material/Divider";
-import { Alert, Collapse } from "@mui/material";
+import { Alert } from "@mui/material";
 import { useState } from "react";
 
 function SearchBar() {
   const [user, setUser] = useState("");
   const [error, setError] = useState("");
+
   const fetchUser = async () => {
     const res = await fetch(`https://api.github.com/users/${user}`);
     const data = await res.json();
@@ -18,12 +19,17 @@ function SearchBar() {
   };
   return (
     <div className="w-2/5">
-      <div className="flex  justify-between rounded-md bg-searchBar px-3 py-2">
+      <div className="flex justify-between rounded-md bg-searchBar px-3 py-2">
         <div className="self-center text-white">
           User
-          <ArrowDropDownIcon className="mx-2 cursor-pointer" />
+          <ArrowDropDownIcon className="mr-3 cursor-pointer" />
         </div>
-        <Divider className="bg-gray-500" orientation="vertical" />
+        <Divider
+          orientation="vertical"
+          className="bg-gray-200 opacity-30"
+          flexItem={true}
+          light={true}
+        />
         <input
           className="ml-3 flex-1 bg-searchBar text-gray-300 outline-none"
           type="text"
