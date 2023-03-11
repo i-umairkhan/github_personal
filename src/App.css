@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+ 
+h1{
+    font-family: 'Chivo', sans-serif;
+}
+.bg-image{
+    background-image: url("./assets/bg-github.svg");
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    background-size: 400px 400px;
+
+}
